@@ -41,23 +41,4 @@ class LinkedList {
   }
 }
 
-const ll = new LinkedList();
-
-ll.insert(1)
-  .insert(2)
-  .insert(3)
-  .insert(4)
-  .insert(5)
-  .print()
-  .remove()
-  .remove()
-  .remove()
-  .print()
-  .remove()
-  .print()
-  .remove()
-  .print()
-  .remove()
-  .remove()
-  .remove()
-  .print();
+module.exports = { LinkedList: LinkedList };
