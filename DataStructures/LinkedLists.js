@@ -1,8 +1,8 @@
 class LinkedList {
-  #list = null;
+  list = null;
 
   print() {
-    let currentLink = this.#list;
+    let currentLink = this.list;
     if (!currentLink) console.log("List is empty");
     while (currentLink) {
       console.log(currentLink.val);
@@ -14,9 +14,9 @@ class LinkedList {
 
   insert(val) {
     const newLink = { val: val, next: null };
-    if (!this.#list) this.#list = newLink;
+    if (!this.list) this.list = newLink;
     else {
-      let currentLink = this.#list;
+      let currentLink = this.list;
       while (currentLink.next !== null) currentLink = currentLink.next;
       currentLink.next = newLink;
     }
@@ -25,9 +25,9 @@ class LinkedList {
   }
 
   remove() {
-    if (!this.#list || !this.#list.next) this.#list = null;
-    else if (this.#list) {
-      let currentLink = this.#list;
+    if (!this.list || !this.list.next) this.list = null;
+    else if (this.list) {
+      let currentLink = this.list;
       let prevLink = null;
       while (currentLink.next !== null) {
         prevLink = currentLink;
