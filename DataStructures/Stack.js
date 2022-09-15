@@ -1,4 +1,4 @@
-const { LinkedList } = require("./LinkedLists");
+const { LinkedList } = require("./LinkedList");
 
 // built-in kind of stack
 const stack1 = [];

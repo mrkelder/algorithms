@@ -1,4 +1,4 @@
-const { LinkedList } = require("./LinkedLists");
+const { LinkedList } = require("./LinkedList");
 
 // with arrays
 const queue1 = [];
